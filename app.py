@@ -111,3 +111,34 @@ def recommend(movie_name):
         recommended_movies.append(movies.iloc[i[0]]['title'])
         movies_posters.append(fetch_poster(movies.iloc[i[0]]['movie_id']))
     return recommended_movies, movies_posters
+
+# Displaying recommended movies with posters
+with st.expander(label="Watched a great movie, we've got similar picks!", expanded=True, icon=":material/movie:"):
+    selected_movie = st.selectbox(label="Watched a great movie? We've got similar picks!", options=movies_list, label_visibility='collapsed')
+    if st.button(label='Recommend', icon=":material/thumb_up:", type='primary'):
+
+        progress_text = "Recommending movies, Please wait..."
+        my_bar = st.progress(0, text=progress_text)
+        for percent_complete in range(101):
+            time.sleep(0.02)
+            my_bar.progress(percent_complete, text=progress_text)
+        time.sleep(0.5)
+        my_bar.empty()
+
+        names, posters = recommend(selected_movie)
+        col1, col2, col3, col4, col5 = st.columns(5, border=True, vertical_alignment='center')
+        with col1:
+            st.image(posters[0],use_container_width=True)
+            st.caption(names[0])
+        with col2:
+            st.image(posters[1],use_container_width=True)
+            st.caption(names[1])
+        with col3:
+            st.image(posters[2],use_container_width=True)
+            st.caption(names[2])
+        with col4:
+            st.image(posters[3],use_container_width=True)
+            st.caption(names[3])
+        with col5:
+            st.image(posters[4],use_container_width=True)
+            st.caption(names[4])
