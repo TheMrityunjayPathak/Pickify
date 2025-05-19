@@ -99,3 +99,15 @@ def fetch_poster(movie_id):
     poster_path = data['poster_path']
     full_img_path = f"https://image.tmdb.org/t/p/w500{poster_path}"
     return full_img_path
+
+# Function to get top 5 movie recommendations
+def recommend(movie_name):
+    movie_idx = movies[movies['title'] == movie_name].index[0]
+    movie_similarity = similarity[movie_idx]
+    similar_movies = sorted(list(enumerate(movie_similarity)), reverse=True, key=lambda x: x[1])[1:6]
+    recommended_movies = []
+    movies_posters = []
+    for i in similar_movies:
+        recommended_movies.append(movies.iloc[i[0]]['title'])
+        movies_posters.append(fetch_poster(movies.iloc[i[0]]['movie_id']))
+    return recommended_movies, movies_posters
