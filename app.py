@@ -89,3 +89,13 @@ st.markdown("""
 
 # Adding banner for visual enhancement
 st.image(get_path('images','banner.png'), use_container_width=True)
+
+# Function to fetch movie posters
+def fetch_poster(movie_id):
+    api_key = st.secrets["tmdb"]["api_key"]
+    url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}'
+    response = requests.get(url)
+    data = response.json()
+    poster_path = data['poster_path']
+    full_img_path = f"https://image.tmdb.org/t/p/w500{poster_path}"
+    return full_img_path
