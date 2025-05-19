@@ -86,3 +86,6 @@ st.markdown("""
         </div>
     </div>
 """, unsafe_allow_html=True)
+
+# Adding banner for visual enhancement
+st.image(get_path('images','banner.png'), use_container_width=True)
