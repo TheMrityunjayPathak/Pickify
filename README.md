@@ -1,6 +1,6 @@
 <h1 align='center'>Movie Recommender System</h1>
 
-<img src='https://github.com/user-attachments/assets/2e9d8d27-ea4c-4711-8e8f-cee766549bf6' title='Banner'>
+<img src='https://github.com/user-attachments/assets/402f6ff0-b0f0-4382-827b-b7b06e33961d' title='Banner'>
 
 ## Table of Contents
 - [Problem Statement](#problem-statement)
@@ -36,18 +36,18 @@
 
 - The dataset contains metadata for each movie including keywords, genres, cast, crew and overview.
 
-<img src='https://github.com/user-attachments/assets/fd22ae94-9f43-4bb9-8f59-96f875cbd9b1' title='Screenshot-1'>
+<img src='https://github.com/user-attachments/assets/7196153c-f0a8-46cb-b47f-204b5db0cf46' title='Screenshot-1'>
 
 - All these features are combined into a new column called `tags` to create a unified representation of each movie.
 
-<img src='https://github.com/user-attachments/assets/4f331ce9-610c-4a29-a899-5c8796e48ad0' title='Screenshot-2'>
+<img src='https://github.com/user-attachments/assets/9f019c4c-0c1b-4f87-acdc-1253dd791eea' title='Screenshot-2'>
 
 - Text preprocessing is applied to the `tags` column :
   - All text is converted to lowercase (e.g., `"Action, Thriller"` becomes `"action, thriller"`).
   - Spaces between words are removed (e.g., `"action movie"` becomes `"actionmovie"`).
   - Stemming is performed using [`PorterStemmer`](https://www.nltk.org/howto/stem.html) to reduce words to their root form.
   
-<img src='https://github.com/user-attachments/assets/a5d83363-0ed5-4c3c-867c-65d3f9e4721c' title='Screenshot-3'>
+<img src='https://github.com/user-attachments/assets/54710f7c-b354-480f-b4be-b21b6333bacb' title='Screenshot-3'>
 
 - CountVectorizer is used to convert the `tags` column into numerical feature vectors.
 - Cosine similarity is used to calculate similarity between the vector representations of all the movies.
@@ -57,7 +57,7 @@
   - The system recommends top 5 most similar movies based on the similarity score.
 - Movie posters are fetched using the TMDB API to enhance the visual appeal of the recommendations.
  
-<a href='https://pickify.streamlit.app/' title='Pickify'><img src='https://github.com/user-attachments/assets/3d2e6e3b-88c7-41ae-a09b-da1a48aa66d1'/></a>
+<a href='https://pickify.streamlit.app/' title='Pickify'><img src='https://github.com/user-attachments/assets/b2c8e685-565d-4a09-a49a-4323cefd8852'/></a>
 
 <hr>
 
@@ -194,7 +194,7 @@ api_key = st.secrets["tmdb"]["api_key"]
 > 
 > When deploying to streamlit, the API key must be added via the GUI, not through the `secrets.toml` file.
 
-<img src='https://github.com/user-attachments/assets/8b59b1a7-32cb-443c-b8fe-007f6275150a' title='Streamlit UI'>
+<img src='https://github.com/user-attachments/assets/529ae232-8635-479d-9b8f-d089b5688e7a' title='Streamlit UI'>
 
 <hr>
 
