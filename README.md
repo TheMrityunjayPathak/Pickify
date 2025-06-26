@@ -401,6 +401,6 @@ This project is licensed under the [MIT License](LICENSE). You are free to use a
 
 <div align='left'>
   
-**[`^        Scroll to Top       ^`](#movie-recommender-system)**
+**[`^        Scroll to Top       ^`](#pickify--movie-recommender-system)**
 
 </div>
