@@ -144,5 +144,4 @@ with st.expander(label="Watched a great movie, we've got similar picks!", expand
             st.caption(names[4])
 
 # Footer Section
-st.divider()
 st.markdown("<p style='text-align:center;'>Made with ❤️ using Streamlit</p>", unsafe_allow_html=True)
