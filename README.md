@@ -1,14 +1,16 @@
-<h2 align='center'>Pickify : Movie Recommender System</h2>
+<h3 align="center">Pickify : Movie Recommender System</h3>
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://pickify.streamlit.app/)
-[![Python](https://img.shields.io/badge/Python-v3.11-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-v2.2-150458?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-v1.44-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![Scikit-Learn](https://img.shields.io/badge/scikit--learn-v1.5-F7931E?style=flat&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/)
-[![Git](https://img.shields.io/badge/Git-v2.47-F05032?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-E34F26?style=flat&logo=streamlit&logoColor=white)](https://pickify.streamlit.app/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-4420C7?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/)
+[![NLTK](https://img.shields.io/badge/NLTK-NLP-8A2BE2?style=flat&logo=python&logoColor=white)](https://www.nltk.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![gdown](https://img.shields.io/badge/gdown-26A668?style=flat&logo=google-drive&logoColor=white)](https://pypi.org/project/gdown/)
 [![TMDB API](https://img.shields.io/badge/TMDB-API-01B4E4?style=flat&logo=themoviedatabase&logoColor=white)](https://developer.themoviedb.org/docs)
+[![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
 
 </div>
 
@@ -375,7 +377,7 @@ Pickify/
 ├── requirements.txt        # List of required libraries for the Project
 ├── README.md               # Detailed documentation of the Project
 ├── LICENSE                 # License specifying permissions and usage rights
-├── .gitignore              # All files and folders excluded from Git Tracking
+└── .gitignore              # All files and folders excluded from Git Tracking
 ```
 
 <hr>
