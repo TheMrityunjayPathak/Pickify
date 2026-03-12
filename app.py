@@ -142,6 +142,3 @@ with st.expander(label="Watched a great movie, we've got similar picks!", expand
         with col5:
             st.image(posters[4],use_container_width=True)
             st.caption(names[4])
-
-# Footer Section
-st.markdown("<p style='text-align:center;'>Made with ❤️ using Streamlit</p>", unsafe_allow_html=True)
