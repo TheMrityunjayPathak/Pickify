@@ -103,7 +103,7 @@ Access the Streamlit Web Application [here](https://pickify.streamlit.app/) or C
 - Reduced browsing time by instantly suggesting the top 5 most similar movies for any selected title.
 - Delivered movie recommendations in under 3 seconds, ensuring a fast and smooth user experience.
 - Improved content engagement by guiding users toward relevant titles instead of manual browsing.
-- Served 150+ users through a deployed web app, turning a notebook model into a live recommendation system.
+- Served 150+ users through the deployed web app, turning a notebook model into a live recommendation system.
 
 <hr>
 
