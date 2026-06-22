@@ -1,4 +1,4 @@
-<h3 align="center">Pickify : Movie Recommender System</h3>
+<h3 align="center" id="top">Pickify : Movie Recommender System</h3>
 
 <div align="center">
 
@@ -40,10 +40,10 @@
 <hr>
 
 ## Overview
-- Built a content-based movie recommender system trained on 5,000+ movie metadata records.
+- Built a content-based movie recommender system trained on \~4,800+ movie metadata records.
 - Generated the top 5 similar titles for any selected movie in under 3 seconds using cosine similarity.
 - Integrated the TMDB API to dynamically fetch and display movie posters, improving the user experience.
-- Deployed the system as a Streamlit web app, enabling users to explore personalized movie suggestions.
+- Deployed the system as a Streamlit web app, enabling users to explore relevant movie suggestions.
 
 <hr>
 
@@ -127,58 +127,6 @@ Access the Streamlit Web Application [here](https://pickify.streamlit.app/) or C
 import sys, os
 sys.path.append(os.path.abspath("../utils"))
 ```
-
-### Example
-- This is one of the functions I added to my project as the `export_data.py` module in the `utils/` directory.
-<details>
-<summary>Click Here to View Example Function</summary>
-<br>
-
-```python
-import os
-import pandas as pd
-
-def export_as_csv(dataframe, folder_name, file_name):
-    """
-    Exports a pandas DataFrame as a CSV file to a specified folder.
-
-    Parameters:
-        dataframe (pd.DataFrame): The DataFrame to export.
-        folder_name (str): Name of the folder where CSV file will be saved.
-        file_name (str): Name of the CSV file. Must end with ".csv" extension.
-
-    Returns:
-        None
-
-    Raises:
-        TypeError: If input is not a pandas DataFrame.
-        ValueError: If file_name does not end with ".csv" extension.
-        FileNotFoundError: If folder does not exist.
-    """
-    try:
-        if not isinstance(dataframe, pd.DataFrame):
-            raise TypeError("Input must be a pandas DataFrame.")
-        if not file_name.lower().endswith(".csv"):
-            raise ValueError("File name must end with '.csv' extension.")
-        
-        current_dir = os.getcwd()
-        parent_dir = os.path.dirname(current_dir)
-        folder_path = os.path.join(parent_dir, folder_name)
-        file_path = os.path.join(folder_path, file_name)
-
-        if not os.path.isdir(folder_path):
-            raise FileNotFoundError(f"Folder '{folder_name}' does not exist.")
-
-        dataframe.to_csv(file_path, index=False)
-        print(f"Successfully exported the DataFrame as '{file_name}'")
-    except TypeError as e:
-        print(e)
-    except ValueError as e:
-        print(e)
-    except FileNotFoundError as e:
-        print(e)
-```
-</details>
 
 <hr>
 
@@ -406,7 +354,7 @@ Pickify/
 - For example, certain columns can be scaled or repeated to increase their impact on similarity calculations.
 
 #### 2. User Preferences Integration
-- Introduce user-based data to generate more personalized recommendations.
+- Introduce user-based data to generate more relevant recommendations.
 - Collaborative filtering can suggest movies based on similarities between user preferences and behavior.
 - This would make the recommender system more adaptive and user-centric.
 
@@ -414,11 +362,7 @@ Pickify/
 - Fetch movie data from external sources to keep the database continuously updated.
 - This would enable recommending newly released movies and automatically removing outdated content.
 
-#### 4. Improved Similarity Metrics
-- Instead of relying only on cosine similarity, experiment with additional similarity techniques.
-- Methods such as Jaccard similarity, TF-IDF, or Word2Vec could better capture semantic relationships.
-
-#### 5. Interactive User Interface
+#### 4. Interactive User Interface
 - Improve the user experience by adding filters to explore movies based on genres, actors, or directors.
 
 <hr>
@@ -429,6 +373,6 @@ This project is licensed under the [MIT License](LICENSE). You are free to use a
 
 <div align='left'>
   
-**[`^        Scroll to Top       ^`](#pickify--movie-recommender-system)**
+**[`^        Scroll to Top       ^`](#top)**
 
 </div>
